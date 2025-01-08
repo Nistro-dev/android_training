@@ -8,9 +8,9 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Person")
 public class Person {
 
-    @ColumnInfo(name = "person_id")
+    @ColumnInfo(name = "personId")
     @PrimaryKey(autoGenerate = true)
-    int id;
+    public int id;
 
     @ColumnInfo(name = "name")
     String name;
