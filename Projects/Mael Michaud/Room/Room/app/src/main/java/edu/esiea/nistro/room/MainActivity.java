@@ -6,6 +6,7 @@ import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     EditText nameEdit;
     EditText ageEdit;
-    Button saveButton,getDataButton;
+    Button saveButton, getDataButton;
+    TextView dataTextView;
 
     APersonDatabase PersonDatabase;
 
@@ -43,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
         nameEdit = findViewById(R.id.nameEdit);
         ageEdit = findViewById(R.id.ageEdit);
-
         saveButton = findViewById(R.id.saveButton);
         getDataButton = findViewById(R.id.getDataButton);
+        dataTextView = findViewById(R.id.dataTextView);
 
         RoomDatabase.Callback callback = new RoomDatabase.Callback() {
             @Override
@@ -97,12 +99,14 @@ public class MainActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
+                        getPersonListInBackground();
                         Toast.makeText(MainActivity.this, "Person Added", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
         });
     }
+
 
     public void getPersonListInBackground() {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
@@ -121,11 +125,10 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         StringBuilder sb = new StringBuilder();
                         for (Person person : persons) {
-                            sb.append(person.getName() + " : " + person.getAge() + "\n");
-                            System.out.println(person.getName() + " " + person.getAge());
+                            sb.append("Name: ").append(person.getName()).append(", Age: ").append(person.getAge()).append("\n");
                         }
-                        String finalData = sb.toString();
-                        Toast.makeText(MainActivity.this, finalData, Toast.LENGTH_SHORT).show();                    }
+                        dataTextView.setText(sb.toString());
+                    }
                 });
             }
         });
