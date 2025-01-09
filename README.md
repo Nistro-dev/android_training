@@ -72,7 +72,7 @@ Chaque dossier inclut un fichier `README.md` détaillant le sujet, ses fonctionn
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/Nistro-dev/android_training
-```
+   ```
 
 2. Naviguez dans le dossier `Training` pour choisir un sujet :
     
