@@ -1,7 +1,6 @@
-Ajouter les dépendances dans gradle.
-https://developer.android.com/jetpack/androidx/releases/room?hl=fr#groovy
-Ajout de : 
-```kts
+
+# Ajout de la dépendance
+```java
 dependencies {
 	val room_version = "2.6.1"  
 	  
@@ -14,12 +13,6 @@ dependencies {
 	annotationProcessor("androidx.room:room-compiler:$room_version")
 }
 ```
-
-
-Pour voir la bdd :
-- App Inspection
-- Select Process -> Process de l'app
-
 
 # Création des classes
 
