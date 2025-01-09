@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "98a95ea58deb6c51",
+    "id": "96fad9fb3dd449dc",
     "type": "split",
     "children": [
       {
-        "id": "ff309ffd1ebbe2f1",
+        "id": "5a50d07852f7067c",
         "type": "tabs",
         "children": [
           {
-            "id": "ba3bd36c1b91c81e",
+            "id": "03ef44570187d379",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Room/Room.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Room"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "42b62748bdd7d3a9",
+    "id": "7feb1c23bac2a872",
     "type": "split",
     "children": [
       {
-        "id": "aefcfe3916fc6272",
+        "id": "204bcd94b0c5bd55",
         "type": "tabs",
         "children": [
           {
-            "id": "d1c65c87ffed3686",
+            "id": "11c38490204c0132",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +43,7 @@
             }
           },
           {
-            "id": "95fb7b779de5ac65",
+            "id": "82bce45efdc6d322",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,7 +60,7 @@
             }
           },
           {
-            "id": "f985241b60874979",
+            "id": "513d039626e9f573",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -80,20 +76,19 @@
     "width": 300
   },
   "right": {
-    "id": "2a4a120a0d555fed",
+    "id": "0d76a6e3fb443381",
     "type": "split",
     "children": [
       {
-        "id": "026beb67594ae4f2",
+        "id": "d8e38111fb7b02b8",
         "type": "tabs",
         "children": [
           {
-            "id": "80d5f449b66319a1",
+            "id": "203d5c22afc0ce76",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Room/Room.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,25 +98,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Room"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "a331463dce547ee9",
+            "id": "e442308b9fb5794a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Room/Room.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Room"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "a8cc57731052cdeb",
+            "id": "f0e59a73435d7bfb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,22 +128,21 @@
             }
           },
           {
-            "id": "be5cabbc24134d3e",
+            "id": "2d3e393edb0cfa7f",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Room/Room.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Room"
+              "title": "Outline"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,6 +154,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ba3bd36c1b91c81e",
+  "active": "03ef44570187d379",
   "lastOpenFiles": []
 }
